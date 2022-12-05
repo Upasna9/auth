@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Product Landing Page</title>
+</head>
+<body>
+ <nav>
+   <div class="logo">Brand</div>
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Contact</a></li>
+       <li><a href="#">Igdtuw Resource</a></li>
+       <button  class="login">Login</button>
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a href="#">Home</a>
+     <a href="#">About</a>
+     <a href="#">Services</a>
+     <a href="#">Contact</a>
+     <a href="#">Login </a>
+   </div>
+   
+   <!-- Header content with banner image -->
+   <div class="shape">
+		<img class="shape1" src="download.png" alt="">
+		<img class="shape2" src="download.png" alt="">
+		<img class="shape3" src="download.png" alt="">
+		<img class="shape4" src="download.png" alt="">
+		<img class="shape5" src="download.png" alt="">
+	</div>
+   <div class="row">
+     <div class="column1">
+      <br><br>
+       <h1 class="button">Learn & Grow</h1>
+       <p>Quizzard</p>
+       <div class="buttons">
+        <button class="btn-hover color-9">Explore More</button>
+        
+    </div>
+     </div>
+     <div class="column2">
+       
+     </div>
+   </div>
+   
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+ 
+</body>
+</html>
